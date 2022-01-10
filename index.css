@@ -170,6 +170,13 @@ button {
   text-align: center;
 }
 
+.time {
+  width: 100%;
+  color: rgb(109, 109, 109);
+  font-size: 13px;
+  font-weight: bold;
+}
+
 .contact-brief {
   text-align: center;
   margin-bottom: 30px;
