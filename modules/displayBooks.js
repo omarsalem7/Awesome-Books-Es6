@@ -24,14 +24,10 @@ const displayBooks = (booksList) => {
   removeBtns.forEach((btn) => {
     btn.addEventListener('click', (e) => {
       const element = btn.parentNode;
-      booksList.removeBook(parseInt(e.target.id, 8));
+      booksList.removeBook(Number(e.target.id));
       element.remove();
     });
   });
-
-  if (booksList.list.length === 0) {
-    books.innerHTML = '<h4 class="no-books">No books to show</h4>';
-  }
 };
 
 export default displayBooks;
