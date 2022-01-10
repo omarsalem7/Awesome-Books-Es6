@@ -27,4 +27,12 @@ form.addEventListener('submit', (e) => {
 navigation();
 
 // Add time
+const setTime = function () {
+    const dt = DateTime.now();
+    const time = dt.toLocaleString(DateTime.DATETIME_MED)
+    document.querySelector('.time').textContent = time;
+}
 
+setTime();
+
+setInterval(function () { setTime(); }, 1000);
