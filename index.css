@@ -68,10 +68,6 @@ hr {
   margin: 0 auto;
 }
 
-/* .books-wraper {
-    overflow: scroll;
-  } */
-
 .book-item {
   list-style: none;
   display: flex;
