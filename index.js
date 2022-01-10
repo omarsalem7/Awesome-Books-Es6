@@ -1,6 +1,6 @@
-import displayBooks from "./modules/displayBooks.js";
-import Books from "./modules/books.js";
-import navigation from "./modules/navigation.js";
+import displayBooks from './modules/displayBooks.js';
+import Books from './modules/books.js';
+import navigation from './modules/navigation.js';
 import { DateTime } from './node_modules/luxon/build/es6/luxon.js';
 
 const booksList = new Books();
@@ -27,12 +27,12 @@ form.addEventListener('submit', (e) => {
 navigation();
 
 // Add time
-const setTime = function () {
+const setTime = () => {
     const dt = DateTime.now();
-    const time = dt.toLocaleString(DateTime.DATETIME_MED)
+    const time = dt.toLocaleString(DateTime.DATETIME_MED);
     document.querySelector('.time').textContent = time;
-}
+};
 
 setTime();
 
-setInterval(function () { setTime(); }, 1000);
+setInterval(() => { setTime(); }, 1000);
