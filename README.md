@@ -4,7 +4,7 @@
 
 > This website Awesome Books Library provides users a convenient way to keep track of their books or reading lists. Users can add and remove books from the list of books they curate on the website.
 
-![screenshot](./assets/screen.png)
+![screenshot](./screen.png)
 
 ## Built With
 
